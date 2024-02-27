@@ -4,13 +4,13 @@ pipeline {
         stage('Build') {
             steps {
                 // Invoke Maven to build the project
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
         stage('Test') {
             steps {
                 // Run tests, typically also done as part of Maven build
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
     }
