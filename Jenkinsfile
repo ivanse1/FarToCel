@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         // Append the Maven bin directory to the PATH
-        PATH = "${env.PATH};C:\apache-maven-3.9.6\bin"
+        PATH = "${env.PATH};C:\\apache-maven-3.9.6\\bin"
         // Set up your Git credentials
         GIT_CREDENTIALS = credentials('1')
     }
